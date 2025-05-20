@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Incident Report Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .analysis, .recommendations {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Major Incident Report Analysis</h1>
+
+    <h2>Summary of Top 5 Incidents</h2>
+    <table>
+        <tr>
+            <th>Incident Ticket Number</th>
+            <th>Customer Name</th>
+            <th>Description of Issue</th>
+            <th>Severity</th>
+            <th>Outage Duration (in minutes)</th>
+            <th>Incident Resolved</th>
+            <th>Repeat Incident</th>
+        </tr>
+        <tr>
+            <td>INC0343807</td>
+            <td>SatelliteSolutions Limited</td>
+            <td>Users unable to access Ops VPN</td>
+            <td>P1</td>
+            <td>3843</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>INC0607344</td>
+            <td>FlavorMasters & Company, Inc</td>
+            <td>Hardware failure at Byte grid data center affecting US voice management system</td>
+            <td>P2</td>
+            <td>3840</td>
+            <td>No</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>INC0346557</td>
+            <td>SatelliteSolutions Limited</td>
+            <td>Unable to connect to OPS Desktop</td>
+            <td>P1</td>
+            <td>2739</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>INC0016431</td>
+            <td>TalentSeekers Limited</td>
+            <td>GP Terminal server is disconnected</td>
+            <td>P1</td>
+            <td>1920</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>INC0652497</td>
+            <td>PackagingPros Corporation</td>
+            <td>1-800-243-1102 Technical support number down</td>
+            <td>P2</td>
+            <td>1500</td>
+            <td>No</td>
+            <td>No</td>
+        </tr>
+    </table>
+
+    <div class="analysis">
+        <h3>Analysis and Recommendations:</h3>
+
+        <h4>Incident INC0343807: Users unable to access Ops VPN.</h4>
+        <p><strong>Analysis:</strong> This incident had a significant outage duration of 3843 minutes. The issue was resolved and did not recur.</p>
+        <p><strong>Recommendation:</strong> Implement redundant VPN access points and conduct regular maintenance checks to ensure VPN stability.</p>
+
+        <h4>Incident INC0607344: Hardware failure at Byte grid data center affecting US voice management system.</h4>
+        <p><strong>Analysis:</strong> This incident had an outage duration of 3840 minutes and is still unresolved.</p>
+        <p><strong>Recommendation:</strong> Enhance hardware monitoring and establish a robust disaster recovery plan to minimize downtime.</p>
+
+        <h4>Incident INC0346557: Unable to connect to OPS Desktop.</h4>
+        <p><strong>Analysis:</strong> This incident had an outage duration of 2739 minutes. The issue was resolved and did not recur.</p>
+        <p><strong>Recommendation:</strong> Improve desktop connectivity protocols and ensure regular updates to prevent similar issues.</p>
+
+        <h4>Incident INC0016431: GP Terminal server is disconnected.</h4>
+        <p><strong>Analysis:</strong> This incident had an outage duration of 1920 minutes. The issue was resolved and did not recur.</p>
+        <p><strong>Recommendation:</strong> Implement server redundancy and conduct regular server health checks to avoid disconnections.</p>
+
+        <h4>Incident INC0652497: 1-800-243-1102 Technical support number down.</h4>
+        <p><strong>Analysis:</strong> This incident had an outage duration of 1500 minutes and is still unresolved.</p>
+        <p><strong>Recommendation:</strong> Ensure backup communication channels and improve vendor support for critical services.</p>
+    </div>
+
+    <h2>Top 5 Contributors for P1 Incidents</h2>
+    <table>
+        <tr>
+            <th>Contributor</th>
+            <th>Incident Count</th>
+            <th>Total Outage Duration (in minutes)</th>
+        </tr>
+        <tr>
+            <td>Customer 3rd party/vendor</td>
+            <td>43</td>
+            <td>8562</td>
+        </tr>
+        <tr>
+            <td>Customer</td>
+            <td>34</td>
+            <td>11114</td>
+        </tr>
+        <tr>
+            <td>Cognizant</td>
+            <td>23</td>
+            <td>3707</td>
+        </tr>
+        <tr>
+            <td>Yet to be ascertained</td>
+            <td>12</td>
+            <td>1284</td>
+        </tr>
+    </table>
+</body>
+</html>
